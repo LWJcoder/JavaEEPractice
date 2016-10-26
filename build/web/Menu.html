@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <form action="Menu" name="form1">
+        <ul>
+            <li><button name="upload" id="upload" onclick="upload()">上传</button></li>
+             <li><button name="download" id="download" onclick="download()">下载</button></li>
+              <li><button name="destory" id="destory" onclick="destory()">注销</button></li>
+              <li><button name="signout" id="signout" onclick="signout()">退出</button></li>
+        </ul>
+        </form>
+        <script type="text/javascript">
+            window.onload = function{
+                var upload = document.getElementById('upload');
+                var download = document.getElementById('downlaod');
+                var destory = document.getElementById('destory');
+                var signout = document.getElementById('signout');
+                
+                function upload(){
+                    window.location = "upload.html";
+                }
+                
+                 function download(){
+                    window.location = "download.html";
+                }
+                 function destory(){
+                    window.destory = "upload.html";
+                }
+                 function signout(){
+                    window.location = "signout.html";
+                }
+                
+                
+            }
+         </script>
+    </body>
+</html>
